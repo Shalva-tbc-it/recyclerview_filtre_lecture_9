@@ -3,6 +3,8 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:background="@color/main_bg"
+    android:paddingTop="10dp"
+    android:layout_marginBottom="23dp"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.appcompat.widget.AppCompatImageView
@@ -39,16 +41,5 @@
         android:fontFamily="@font/sfpro_display_regular"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvTitle"/>
-
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/tvCategoryType"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:text="Colection"
-        android:textSize="14sp"
-        android:fontFamily="@font/sfpro_display_regular"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tvTitle"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

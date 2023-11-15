@@ -4,8 +4,16 @@ import java.util.UUID
 
 data class Collection(
     val id: UUID,
-    val image: Int,
-    val title: String,
-    val price: Double,
-    val categoryType: String
+    var image: Int,
+    var title: String,
+    var price: Double,
+    var categoryType: CATEGORY
 )
+
+enum class CATEGORY {
+    Party,
+    Camping,
+    Category1,
+    Category2,
+    Category3
+}

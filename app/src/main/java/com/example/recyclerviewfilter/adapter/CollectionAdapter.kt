@@ -30,12 +30,11 @@ class CollectionAdapter: ListAdapter<Collection, CollectionAdapter.CollectionVie
     inner class CollectionViewHolder(private val binding: RecyclerviewItemBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind() {
             val collection = currentList[adapterPosition]
-            binding.apply {
-                imgGirl.setImageResource(collection.image)
-                tvTitle.text = collection.title
-                tvPrice.text = collection.price.toString()
-                tvCategoryType.text = collection.categoryType
-            }
+                binding.apply {
+                    imgGirl.setImageResource(collection.image)
+                    tvTitle.text = collection.title
+                    tvPrice.text = collection.price.toString()
+                }
         }
     }
 
