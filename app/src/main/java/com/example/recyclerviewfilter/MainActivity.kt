@@ -87,7 +87,7 @@ class MainActivity : AppCompatActivity() {
                 image = R.drawable.girl_2,
                 title = "Black",
                 price = 39.99,
-                categoryType = CATEGORY.Category1
+                categoryType = CATEGORY.Party
             ),
             Collection(
                 id = UUID.randomUUID(),
@@ -131,8 +131,23 @@ class MainActivity : AppCompatActivity() {
                 image = R.drawable.girl_4,
                 title = "Black",
                 price = 39.99,
+                categoryType = CATEGORY.Category1
+            ),
+            Collection(
+                id = UUID.randomUUID(),
+                image = R.drawable.girl_3,
+                title = "Black",
+                price = 79.99,
+                categoryType = CATEGORY.Category3
+            ),
+            Collection(
+                id = UUID.randomUUID(),
+                image = R.drawable.girl_4,
+                title = "Black",
+                price = 39.99,
                 categoryType = CATEGORY.Category3
             )
+
         )
         collection.addAll(newCollection)
         collection.addAll(newCollection)
