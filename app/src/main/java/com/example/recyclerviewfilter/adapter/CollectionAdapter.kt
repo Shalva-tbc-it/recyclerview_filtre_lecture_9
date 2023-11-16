@@ -5,6 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.example.recyclerviewfilter.data_models.CATEGORY
 import com.example.recyclerviewfilter.data_models.Collection
 import com.example.recyclerviewfilter.databinding.RecyclerviewItemBinding
 
@@ -34,6 +35,7 @@ class CollectionAdapter: ListAdapter<Collection, CollectionAdapter.CollectionVie
                     imgGirl.setImageResource(collection.image)
                     tvTitle.text = collection.title
                     tvPrice.text = collection.price.toString()
+                    tvCategory.text = collection.categoryType.toString()
                 }
         }
     }

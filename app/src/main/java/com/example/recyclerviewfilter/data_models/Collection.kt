@@ -11,6 +11,7 @@ data class Collection(
 )
 
 enum class CATEGORY {
+    All,
     Party,
     Camping,
     Category1,
